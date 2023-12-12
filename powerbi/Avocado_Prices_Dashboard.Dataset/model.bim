@@ -1,0 +1,729 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"avocado_prices\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.123.742.0 (23.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "el-GR",
+    "cultures": [
+      {
+        "name": "el-GR",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "0f1aa39f-939f-45ba-917f-b92e81ee6a1b",
+        "fromColumn": "Date",
+        "fromTable": "avocado_prices",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_4e8b0e41-5175-4e16-98d2-0f5259263fee"
+      }
+    ],
+    "sourceQueryCulture": "el-GR",
+    "tables": [
+      {
+        "name": "avocado_prices",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Περιήγηση"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "14210f31-1a52-4226-b636-76272681e666",
+            "sourceColumn": "Column1",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Order_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1544b34d-6d73-4b0b-801f-181d59f909b6",
+            "sourceColumn": "Order_ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "f595d50d-2108-4a6c-a243-12fefae705e2",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Παραλλαγή",
+                "defaultHierarchy": {
+                  "hierarchy": "Ιεραρχία ημερομηνιών",
+                  "table": "LocalDateTable_4e8b0e41-5175-4e16-98d2-0f5259263fee"
+                },
+                "isDefault": true,
+                "relationship": "0f1aa39f-939f-45ba-917f-b92e81ee6a1b"
+              }
+            ]
+          },
+          {
+            "name": "Average Price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8f4c4e1c-65d0-407a-b74f-cd34547ee331",
+            "sourceColumn": "Average Price",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "Total Volume",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "994a65b3-f22d-4ff4-8525-4e98d50c23f1",
+            "sourceColumn": "Total Volume",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PLU 4046 sold",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "01ef099e-705e-4dfc-8534-cdf533153fca",
+            "sourceColumn": "PLU 4046 sold",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PLU 4225 sold",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9e0e5b1b-4d63-44ae-9cf9-ca1b0f0884c2",
+            "sourceColumn": "PLU 4225 sold",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PLU 4770 sold ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d9b7724d-db56-433d-94a8-a3aeae372604",
+            "sourceColumn": "PLU 4770 sold ",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Bags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "31a7f6cd-568a-475c-8e81-c5f6cc7f1428",
+            "sourceColumn": "Total Bags",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Small Bags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3a90e33f-8d3e-4603-b92e-78f6f429338e",
+            "sourceColumn": "Small Bags",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Large Bags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a88dc97c-51aa-4ec3-b343-7e5c05deaa1a",
+            "sourceColumn": "Large Bags",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "XLarge Bags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bcb1cc37-82a1-4f7c-aef7-ac4485afeea0",
+            "sourceColumn": "XLarge Bags",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2dab908f-92e8-4e0e-9103-37a8952f7c61",
+            "sourceColumn": "Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2f67f1f7-3ed6-4924-bcb8-18f1f731a916",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9722c174-793b-4341-aef6-6fb07a2b93be",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b4d0f071-207b-4b06-9764-943dd1a34095",
+        "partitions": [
+          {
+            "name": "avocado_prices",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Προέλευση = Csv.Document(File.Contents(\"C:\\Users\\Nikos\\Desktop\\Vagia\\Portfolio\\Avocado Prices\\Final\\avocado_prices.csv\"),[Delimiter=\",\", Columns=15, Encoding=1253, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Αναβαθμισμένες κεφαλίδες\" = Table.PromoteHeaders(Προέλευση, [PromoteAllScalars=true]),",
+                "    #\"Αλλαγή τύπου\" = Table.TransformColumnTypes(#\"Αναβαθμισμένες κεφαλίδες\",{{\"\", Int64.Type}, {\"Order_ID\", Int64.Type}, {\"Date\", type date}, {\"Average Price\", type number}, {\"Total Volume\", Int64.Type}, {\"PLU 4046 sold\", Int64.Type}, {\"PLU 4225 sold\", Int64.Type}, {\"PLU 4770 sold \", Int64.Type}, {\"Total Bags\", Int64.Type}, {\"Small Bags\", Int64.Type}, {\"Large Bags\", Int64.Type}, {\"XLarge Bags\", Int64.Type}, {\"Type\", type text}, {\"Year\", Int64.Type}, {\"Region\", type text}}),",
+                "    #\"Αναπαραγωγή στήλης\" = Table.DuplicateColumn(#\"Αλλαγή τύπου\", \"Average Price\", \"Average Price - Αντίγραφο\"),",
+                "    #\"Αναδιάταξη στηλών\" = Table.ReorderColumns(#\"Αναπαραγωγή στήλης\",{\"\", \"Order_ID\", \"Date\", \"Average Price\", \"Average Price - Αντίγραφο\", \"Total Volume\", \"PLU 4046 sold\", \"PLU 4225 sold\", \"PLU 4770 sold \", \"Total Bags\", \"Small Bags\", \"Large Bags\", \"XLarge Bags\", \"Type\", \"Year\", \"Region\"}),",
+                "    #\"Μετονομασία στηλών\" = Table.RenameColumns(#\"Αναδιάταξη στηλών\",{{\"Average Price - Αντίγραφο\", \"Average Price_final\"}}),",
+                "    #\"Κατάργηση στηλών\" = Table.RemoveColumns(#\"Μετονομασία στηλών\",{\"Average Price_final\"})",
+                "in",
+                "    #\"Κατάργηση στηλών\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_0590eb7f-2442-44e1-949c-270fcdd8f849",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d916edc3-0059-41e2-8bf6-29c2b6c70900",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Έτος",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "80b2fd8b-ff8e-40a8-a8e4-8e4253fdbfe6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "1e12701b-7f0a-4601-9908-192e54208181",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Μήνας",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "9a0d1aa5-a18b-4698-b800-b71895a3ef47",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "e5d0121b-4d51-4450-8fbc-33f9a4933dbf",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Τρίμηνο",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Τρίμηνο \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "2fc5a4ee-e737-4904-b9c0-12072573a287",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Ημέρα",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "2ac78f2f-00a6-4872-9bfe-e64a4a5b7a10",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Ιεραρχία ημερομηνιών",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Έτος",
+                "column": "Έτος",
+                "lineageTag": "af3b7204-2bbb-45ab-aeba-15add815feaa",
+                "ordinal": 0
+              },
+              {
+                "name": "Τρίμηνο",
+                "column": "Τρίμηνο",
+                "lineageTag": "a2e1bfcb-a624-427a-ae15-41df58582ad8",
+                "ordinal": 1
+              },
+              {
+                "name": "Μήνας",
+                "column": "Μήνας",
+                "lineageTag": "e092eb98-3bf5-4813-9dde-f43f790515ea",
+                "ordinal": 2
+              },
+              {
+                "name": "Ημέρα",
+                "column": "Ημέρα",
+                "lineageTag": "97a889e1-fb6a-485d-b307-cf30847cae92",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "359948e0-d4d6-4e7a-ba0b-3bf84efd8317"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "2af4a80b-471b-4b98-b2b4-e5b0eed2efb7",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_0590eb7f-2442-44e1-949c-270fcdd8f849",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_4e8b0e41-5175-4e16-98d2-0f5259263fee",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "cc92adec-54b1-499b-87b3-64d116c8bef6",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Έτος",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "071d021c-c086-4e45-8631-741908718678",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "0d6a2edf-dea0-4bda-b5e3-a7dc9236cdeb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Μήνας",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "a2c1afd8-b402-493f-8246-0f3c040113b5",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "6781321d-5b8a-41ae-9bfc-239aa460e979",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Τρίμηνο",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Τρίμηνο \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "8177b93f-8308-4ab1-9ea8-21fa145da50d",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Ημέρα",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "664a8f3c-5627-4b1a-820a-11af8178a2a6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Ιεραρχία ημερομηνιών",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Έτος",
+                "column": "Έτος",
+                "lineageTag": "195943c5-fb1e-4c98-8ff4-e210d488758d",
+                "ordinal": 0
+              },
+              {
+                "name": "Τρίμηνο",
+                "column": "Τρίμηνο",
+                "lineageTag": "10ff6a56-4987-4ca8-901a-07260b27c9f4",
+                "ordinal": 1
+              },
+              {
+                "name": "Μήνας",
+                "column": "Μήνας",
+                "lineageTag": "bc4f20b9-1a42-42bf-b8fa-bb5c1ee72032",
+                "ordinal": 2
+              },
+              {
+                "name": "Ημέρα",
+                "column": "Ημέρα",
+                "lineageTag": "2ec822f8-76c9-421c-ab1f-3700591c5beb",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "bdd78694-1b9c-4411-9f18-4416b92e926f"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "e1af4f8b-f6e2-4d96-9758-7e42835622b7",
+        "partitions": [
+          {
+            "name": "LocalDateTable_4e8b0e41-5175-4e16-98d2-0f5259263fee",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('avocado_prices'[Date])), 1, 1), Date(Year(MAX('avocado_prices'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
